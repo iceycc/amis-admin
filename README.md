@@ -1,6 +1,9 @@
 AMis Boilerplate
 ==========================
 
+
+
+
 基于 [AMis](https://github.com/baidu/amis) 渲染器，快速搭建自己的管理系统。
 
 ## 快速开始
@@ -9,6 +12,11 @@ AMis Boilerplate
 # 打开服务
 npm start
 ```
+
+## 
+
+## 数据状态管理：mobx
+https://mobx.js.org/README.html
 
 ## 注意
 

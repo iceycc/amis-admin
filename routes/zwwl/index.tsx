@@ -9,6 +9,8 @@ import { IMainStore } from '../../stores';
 import { inject, observer } from 'mobx-react';
 import UserInfo from '../../components/UserInfo';
 import { mapTree } from 'amis/lib/utils/helper';
+
+
 import Dashboard from './Dashboard';
 import BasicForm from './form/Basic';
 import AdvancedForm from './form/Advanced';
@@ -180,9 +182,6 @@ export default class Admin extends React.Component<AdminProps> {
         );
     }
 
-    /**
-     * 侧边栏
-     */
     renderAside() {
         const location = this.props.location;
         const store = this.props.store;

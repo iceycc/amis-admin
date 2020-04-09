@@ -73,10 +73,10 @@ const schema = {
     ]
 };
 
-@inject("store")
+// @inject("store")
 // @ts-ignore
 @withRouter
-@observer
+@observer(['store'])
 export default class LoginRoute extends React.Component<LoginProps> {
     handleFormSaved = (value:any) => {
         const store = this.props.store;
@@ -90,7 +90,7 @@ export default class LoginRoute extends React.Component<LoginProps> {
         return (
             <div className="app app-header-fixed ">
                 <div className="container w-xxl w-auto-xs">
-                    <a className="block m-t-xxl m-b-xl text-center text-2x">XXX 系统登录</a>
+                    <a className="block m-t-xxl m-b-xl text-center text-2x">豆神amis系统登录</a>
                     <AMisRenderer
                         onFinished={this.handleFormSaved}
                         schema={schema}
